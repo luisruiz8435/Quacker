@@ -1,0 +1,27 @@
+#singlepost {
+  background: rgb(0, 219, 235);
+  border-radius: 10px;
+  box-shadow: black 5px 5px;
+}
+
+#postuser {
+  margin: 10px auto 10px 10px;
+  padding-top: 10px;
+}
+
+.messagebody {
+  background: white;
+  border-bottom: solid 5px rgb(0, 219, 235);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#postmessage {
+  font-weight: bold;
+  font-size: large;
+}
+
+#posttime {
+  color: rgb(221, 221, 221)
+}

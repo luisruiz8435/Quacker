@@ -1,0 +1,8 @@
+#signoutbutton {
+  background: transparent;
+  border: transparent;
+}
+
+#signoutbutton:hover {
+  color: rgb(175, 243, 255)
+}

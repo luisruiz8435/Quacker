@@ -1,0 +1,66 @@
+#navigation {
+  display: grid;
+  position: fixed;
+  grid-template-columns: 2% 6% 2% 2% 6% 1% 47% 1.5% 6% 2% 6% 6%;
+  grid-template-rows: 5px 4rem 5px;
+  grid-gap: 1rem;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 111, 119));
+}
+
+#homebutton {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+#friendsbutton {
+  grid-row: 2 / 3;
+  grid-column: 5 / 6;
+}
+
+#searchbarcontainer {
+  grid-column: 7 / 8;
+  grid-row: 2 / 3;
+}
+
+#searchbar {
+  display: block;
+  padding: 0 1rem;
+  width: 58%;
+  height: 2.25rem;
+  margin: 1rem auto;
+}
+
+#newsbutton {
+  grid-row: 2 / 3;
+  grid-column: 9 / 10;
+}
+
+#profilebutton {
+  grid-row: 2 / 3;
+  grid-column: 11 / 12;
+}
+
+.navbutton {
+  background: transparent;
+  border: transparent;
+}
+
+#settings {
+  grid-row: 2 / 3;
+  grid-column: 12 / 13;
+}
+#searchedusers {
+  grid-column: 7 / 8;
+  margin-top: 4.8rem;
+  text-align: center;
+
+}
+
+#thesearcheduser {
+  background: white;
+  width: 58%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  border: 5px rgb(240, 240, 240) solid;
+  border-width: 0 5px 0 5px;
+}

@@ -1,0 +1,80 @@
+#feedbackground {
+  display: block;
+  background: rgb(55, 55, 55);
+  width: 40%;
+  height: 100%;
+  border-left: rgb(0, 0, 0, 0.274) 5px solid;
+  border-right: rgba(0, 0, 0, 0.274) 5px solid;
+  border-radius: 2px;
+  overflow: scroll;
+}
+
+#feed {
+  overflow: scroll;
+  width: 98%;
+}
+
+#postsomething {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgb(113, 238, 184);
+  border-bottom: solid 5px rgb(113, 238, 184);
+  border-radius: 10px;
+  box-shadow: black 0 5px;
+}
+
+#postpadding {
+  padding: 0 4rem;
+}
+
+#profilepicture {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.postsomethingcontent {
+  height: 2rem;
+  margin: 1rem 0;
+}
+
+#postsomethingtext {
+  width: 60%;
+  padding: 0 1rem;
+  height: 2.5rem;
+  margin-left: 2rem;
+  border-radius: 2px;
+  border: transparent;
+}
+
+#postbutton {
+  height: 2.5rem;
+  background: rgb(0, 74, 77);
+  border: transparent;
+  border-radius: 2px;
+  box-shadow: black 2px 2px;
+}
+
+#newmessageform {
+  width: 80%;
+}
+
+#visitingheadline {
+  background: rgb(0, 214, 221);
+  position: fixed;
+  margin-top: 6.65rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 31%;
+  left: 0;
+  border-bottom: solid black 5px;
+}
+
+button {
+  background: transparent;
+  border: transparent;
+}
+
+#visitedprofile {
+  padding: 0 4rem;
+}

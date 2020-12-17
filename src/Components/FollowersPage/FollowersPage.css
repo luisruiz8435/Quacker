@@ -1,0 +1,23 @@
+#testwrapper {
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+}
+
+#followerscontainer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background: rgb(77, 216, 184);
+  width: 40%;
+  height: 86vh;
+}
+
+.followpagedata {
+  display: block;
+  box-shadow: black 2px 2px;
+  width: 12rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: x-large;
+}
