@@ -6,6 +6,8 @@ import Settings from './Components/Settings/Settings';
 import FollowersPage from './Components/FollowersPage/FollowersPage';
 import './App.css';
 
+const url = `https://thawing-scrubland-24952.herokuapp.com/`;
+
 const firstState = () => {
   return {
     route: 'signin',
@@ -52,7 +54,7 @@ class App extends React.Component {
 
 
   initializeFeedPage = () => {
-      fetch('http://localhost:3000', {
+      fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +73,7 @@ class App extends React.Component {
   }
 
   initializeProfilePage = () => {
-    fetch('http://localhost:3000/myposts', {
+    fetch(`${url}myposts`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -90,7 +92,7 @@ class App extends React.Component {
   }
 
   initializeVisitedProfilePage = () => {
-    fetch('http://localhost:3000/visitingposts', {
+    fetch(`${url}visitingposts`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -111,7 +113,7 @@ class App extends React.Component {
   }
 
   followerPageSetup = () => {
-    fetch('http://localhost:3000/getmyfollowerdata', {
+    fetch(`${url}getmyfollowerdata`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -131,7 +133,7 @@ class App extends React.Component {
       visitingWho: this.state.visitingWho
     }
 
-    fetch("http://localhost:3000/isfollowing", {
+    fetch(`${url}isfollowing`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -150,7 +152,7 @@ class App extends React.Component {
       visitingWho: this.state.visitingWho,
     }
 
-    fetch("http://localhost:3000/followupdate", {
+    fetch(`${url}followupdate`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -179,10 +181,11 @@ class App extends React.Component {
   }
 
   onRouteChange = (e) => {
-    console.log("route: ", e.currentTarget.value)
+    const {route} = this.state
     this.setState({loginStatus: ''})
     this.setState({route: e.currentTarget.value});
 
+    if (route === 'home' || route === 'profile' || route === 'visitingProfile' || route === 'settings' || route === 'followers')
     document.getElementById('searchbar').value = ''
     this.setState({searchedUsers: []})
   }
@@ -208,7 +211,7 @@ class App extends React.Component {
     this.setState({userSearchBar: e.target.value})
 
     if (e.target.value !== '') {
-      fetch('http://localhost:3000/users', {
+      fetch(`${url}users`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -237,7 +240,7 @@ class App extends React.Component {
       password: password
     }
 
-    fetch('http://localhost:3000/signin', {
+    fetch(`${url}signin`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -271,7 +274,7 @@ class App extends React.Component {
       password: password
     }
 
-    fetch('http://localhost:3000/register', {
+    fetch(`${url}register`, {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',
@@ -287,7 +290,6 @@ class App extends React.Component {
       else {
         this.setState({route: 'home'});
         this.setState({whoSignedIn: data.username})
-        this.setState({user_id: data.user_id})
         console.log('Success');
       }
 
@@ -307,7 +309,7 @@ class App extends React.Component {
     e.preventDefault();
     const data = {username: this.state.whoSignedIn, message: this.state.newMessage}
 
-    fetch('http://localhost:3000/post', {
+    fetch(`${url}post`, {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',
