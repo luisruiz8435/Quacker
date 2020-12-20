@@ -6,10 +6,10 @@
 
 .homepage {
   background: rgb(0, 111, 119);
-  padding: 1rem 4rem;
   width: 22%;
 }
 
 #homeheight {
   height: 100vh;
+  width: 100%;
 }

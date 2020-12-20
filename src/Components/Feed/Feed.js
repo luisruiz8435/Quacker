@@ -59,7 +59,8 @@ const Feed = ({currentRoute, postData, createPost, handleNewMessageChange, visit
               key={'' + post.id}
               username={post.username}
               message={post.post_message}
-              date={post.date_posted}/>)}
+              date={post.date_posted}
+              className="messages"/>)}
             </div>
 
           </div>
@@ -90,13 +91,12 @@ const Feed = ({currentRoute, postData, createPost, handleNewMessageChange, visit
         <div id="feedbackground" style={{height: "100%"}}>
           <div id="feed">
             <div id="visitingheadline">
-              <img src="https://uploads.scratch.mit.edu/users/avatars/51223151.png" style={{width: "6rem"}} alt=''/>
-              <h2>{visitingWho}</h2>
+              <img src="https://uploads.scratch.mit.edu/users/avatars/51223151.png" style={{width: "10vw", height: "10vw", margin: "2vw 0"}} alt=''/>
+              <h2 style={{margin: "6% 0"}}>{visitingWho}</h2>
               <button onClick={handleFollowUpdate}>
-                {isFollowing === false ? <img src="https://static.thenounproject.com/png/581154-200.png" style={{width: "6rem"}} alt=''/> : <img src="https://static.thenounproject.com/png/972420-200.png" style={{width: "2.5rem"}} alt=''/>}
+                {isFollowing === false ? <img src="https://static.thenounproject.com/png/581154-200.png" style={{width: "12vw", height: "12vw"}} alt=''/> : <img src="https://static.thenounproject.com/png/972420-200.png" style={{width: "5vw", height: "5vw"}} alt=''/>}
               </button>
             </div>
-            <div style={{display: "block", height: "7rem"}}></div>
             <div id="visitedprofile">
               {postData.map(post => <DisplayPosts
               key={'' + post.id}

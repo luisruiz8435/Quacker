@@ -1,7 +1,7 @@
 #feedbackground {
   display: block;
   background: rgb(55, 55, 55);
-  width: 40%;
+  width: 70%;
   height: 100%;
   border-left: rgb(0, 0, 0, 0.274) 5px solid;
   border-right: rgba(0, 0, 0, 0.274) 5px solid;
@@ -11,7 +11,7 @@
 
 #feed {
   overflow: scroll;
-  width: 98%;
+  width: 100%;
 }
 
 #postsomething {
@@ -25,7 +25,8 @@
 }
 
 #postpadding {
-  padding: 0 4rem;
+  padding: 0 8%;
+  font-size: 80%;
 }
 
 #profilepicture {
@@ -34,15 +35,14 @@
 }
 
 .postsomethingcontent {
-  height: 2rem;
-  margin: 1rem 0;
+  margin: 3% 0;
 }
 
 #postsomethingtext {
   width: 60%;
-  padding: 0 1rem;
+  padding: 0 2%;
   height: 2.5rem;
-  margin-left: 2rem;
+  margin-left: 10%;
   border-radius: 2px;
   border: transparent;
 }
@@ -56,17 +56,16 @@
 }
 
 #newmessageform {
-  width: 80%;
+  width: 70%;
 }
 
 #visitingheadline {
+  display: flex;
+  font-size: 3vw;
   background: rgb(0, 214, 221);
-  position: fixed;
   margin-top: 6.65rem;
   display: flex;
   justify-content: space-evenly;
-  width: 31%;
-  left: 0;
   border-bottom: solid black 5px;
 }
 
@@ -76,5 +75,9 @@ button {
 }
 
 #visitedprofile {
-  padding: 0 4rem;
+  padding: 0 8%;
+}
+
+.messages {
+  width: 100%;
 }

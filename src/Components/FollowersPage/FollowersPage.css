@@ -9,15 +9,15 @@
   justify-content: space-evenly;
   text-align: center;
   background: rgb(77, 216, 184);
-  width: 40%;
+  width: 75%;
+  font-size: 2vw;
   height: 86vh;
 }
 
 .followpagedata {
   display: block;
-  box-shadow: black 2px 2px;
-  width: 12rem;
+  box-shadow: rgba(0, 0, 0, 0.479) 2px 2px;
   text-align: center;
   margin: 1rem 0;
-  font-size: x-large;
+  font-size: 4vw;
 }
